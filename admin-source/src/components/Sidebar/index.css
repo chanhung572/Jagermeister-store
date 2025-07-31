@@ -1,0 +1,64 @@
+.sidebar {
+  background-color: #f4f4f4;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-size: x-small;
+}
+
+.sidebar.open {
+  width: 180px;
+}
+
+.sidebar.closed {
+  width: 60px;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 10px;
+  transform: translateX(-50%);
+  font-size: large;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.toggle-button-open {
+  left: 10px; 
+  transform: none; 
+}
+
+.toggle-button-closed {
+  left: 50%; 
+}
+
+
+.sidebar-content-wrapper {
+  margin-top: 50px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-content {
+  flex-grow: 1;
+}
+
+.logout-container {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.btn-logout {
+  font-size: small;
+  cursor: pointer;
+}
